@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mozzarella & Basilico — La Romana</title>
-  <meta name="description" content="Mozzarella & Basilico — Italian Restaurant in La Romana. Reserve via WhatsApp or phone." />
+  <meta name="description"
+    content="Mozzarella & Basilico — Italian Restaurant in La Romana. Reserve via WhatsApp or phone." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <header>
     <div class="container topbar">
@@ -34,25 +37,23 @@
     <section class="hero">
       <img src="logo.png" alt="Mozzarella & Basilico Logo" class="logo-large">
       <h1 data-i18n="heroTitle">Mozzarella & Basilico</h1>
-      <p data-i18n="heroDesc">Italian flavors in La Romana. Reserve by WhatsApp or call.</p>
+      <p data-i18n="heroDesc">Authentic Italian flavors in the heart of La Romana. Experience fine dining with
+        traditional Neapolitan recipes.</p>
 
       <div class="actions">
         <a class="btn primary" data-whatsapp href="#" data-i18n="btnWhatsapp">Reserve on WhatsApp</a>
-        <a class="btn secondary" data-call href="#" data-i18n="btnCall">Call now</a>
+        <a class="btn secondary" data-call href="#" data-i18n="btnCall">Call Now</a>
       </div>
     </section>
 
     <div class="grid">
       <section class="card">
-        <h2 data-i18n="locationTitle">Find us</h2>
+        <h2 data-i18n="locationTitle">Find Us</h2>
         <p class="small" data-i18n="locationDesc">
-          Calle Los Robles 9 Buena Vista Norte, Plaza Buena Vista, La Romana 22000, Dominican Republic.
+          Calle Los Robles 9, Buena Vista Norte, Plaza Buena Vista, La Romana 22000, Dominican Republic.
         </p>
         <hr class="sep" />
-        <iframe
-          class="map"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+        <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps?q=18.4278254,-68.9563827&z=16&output=embed"
           title="Google Maps - Mozzarella & Basilico"></iframe>
       </section>
@@ -60,29 +61,81 @@
       <aside class="card">
         <h2 data-i18n="reserveTitle">Reservations</h2>
         <p class="small" data-i18n="reserveDesc">
-          Tap to reserve instantly. No contact form — just WhatsApp or phone.
+          Tap to reserve instantly. No forms — just WhatsApp or Phone.
         </p>
 
-        <ul class="list">
-          <li><strong>Phone / WhatsApp:</strong><br><span class="small">+1 809-776-1737</span></li>
-          <li>
-            <strong data-i18n="linksTitle">Links</strong><br>
-            <div class="footerlinks">
-              <a class="btn" href="https://www.instagram.com/mozzarella.e.basilico" target="_blank" rel="noopener">
-                <span data-i18n="linkIG">Instagram</span>
-              </a>
-              <a class="btn" href="https://www.tripadvisor.com/Restaurant_Review-g147292-d26626383-Reviews-Mozzarella_Basilico-La_Romana_La_Romana_Province_Dominican_Republic.html" target="_blank" rel="noopener">
-                <span data-i18n="linkTA">Tripadvisor</span>
-              </a>
-            </div>
-          </li>
-        </ul>
+        <h3 style="margin-top:20px; font-size:1.1rem; color:var(--accent2);" data-i18n="linksTitle">Social & Reviews
+        </h3>
+        <div class="footerlinks">
+          <a class="btn" href="https://www.instagram.com/mozzarella.e.basilico" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span data-i18n="linkIG">Follow on Instagram</span>
+          </a>
+          <a class="btn"
+            href="https://www.tripadvisor.com/Restaurant_Review-g147292-d26626383-Reviews-Mozzarella_Basilico-La_Romana_La_Romana_Province_Dominican_Republic.html"
+            target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+              <path d="M16 12h2"></path>
+              <path d="M6 12h2"></path>
+            </svg>
+            <span data-i18n="linkTA">Review on Tripadvisor</span>
+          </a>
+        </div>
       </aside>
     </div>
+
+    <!-- Features Section -->
+    <section class="card" style="margin-top: 24px;">
+      <h2 data-i18n="featTitle">Our Amenities</h2>
+      <div class="features-grid">
+        <div class="feat-item"><span class="feat-icon">🍕</span> <span data-i18n="featCuisines">Italian, Pizza,
+            Mediterranean</span></div>
+        <div class="feat-item"><span class="feat-icon">🍽️</span> <span data-i18n="featMeals">Lunch, Dinner,
+            Drinks</span></div>
+        <div class="feat-item"><span class="feat-icon">📶</span> <span data-i18n="featWifi">Free Wi-Fi</span></div>
+        <div class="feat-item"><span class="feat-icon">🅿️</span> <span data-i18n="featParking">Free Parking</span>
+        </div>
+        <div class="feat-item"><span class="feat-icon">💳</span> <span data-i18n="featCards">Cards Accepted</span></div>
+        <div class="feat-item"><span class="feat-icon">🌳</span> <span data-i18n="featOutdoor">Outdoor Seating</span>
+        </div>
+        <div class="feat-item"><span class="feat-icon">♿</span> <span data-i18n="featWheelchair">Wheelchair
+            Accessible</span></div>
+        <div class="feat-item"><span class="feat-icon">🛵</span> <span data-i18n="featDelivery">Delivery
+            Available</span></div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container">
+      <div class="social-footer">
+        <a href="https://www.instagram.com/mozzarella.e.basilico" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g147292-d26626383-Reviews-Mozzarella_Basilico-La_Romana_La_Romana_Province_Dominican_Republic.html"
+          target="_blank" rel="noopener" aria-label="Tripadvisor">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+            <path d="M16 12h2"></path>
+            <path d="M6 12h2"></path>
+          </svg>
+        </a>
+      </div>
       <div data-i18n="footerLine">© Mozzarella & Basilico — La Romana, Dominican Republic</div>
     </div>
   </footer>
@@ -90,4 +143,5 @@
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

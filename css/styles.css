@@ -289,3 +289,117 @@ footer{
   .lang { margin: 0; }
   .hero h1 { font-size: 2.5rem; }
 }
+
+/* Features Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.feat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(176, 155, 70, 0.05); /* Very subtle gold tint */
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 600;
+}
+.feat-icon {
+  font-size: 1.2rem;
+}
+
+/* Redesigned Hours Page */
+.hours-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hours-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.day-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.5);
+  transition: background 0.2s;
+}
+.day-row:last-child {
+  border-bottom: none;
+}
+.day-row:hover {
+  background: white;
+}
+.day-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent2);
+}
+.day-time {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text);
+  text-align: right;
+}
+.time-sep {
+  margin: 0 8px;
+  color: var(--muted);
+}
+.day-row.closed {
+  background: rgba(0,0,0,0.02);
+}
+.status-closed {
+  color: var(--muted);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Mobile Tweaks for hours */
+@media (max-width: 600px) {
+  .day-row {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    padding: 15px;
+  }
+  .day-time { text-align: center; }
+}
+
+
+/* Social Footer */
+.social-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.social-footer a {
+  color: var(--muted);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+.social-footer a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+

@@ -33,64 +33,101 @@
   </header>
 
   <main class="container">
-    <section class="card">
-      <h2 data-i18n="hoursTitle">Opening hours</h2>
+    <section class="card hours-card">
+      <h2 data-i18n="hoursTitle">Opening Hours</h2>
+      <p class="small" data-i18n="hoursDesc" style="margin-bottom: 30px; text-align:center;">Come visit us for Lunch or
+        Dinner.</p>
 
-      <table class="table" aria-label="Opening hours">
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Lunch</th>
-            <th>Dinner</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td data-i18n="daySun">Sunday</td>
-            <td data-i18n="lunch">12:00 PM – 3:00 PM</td>
-            <td data-i18n="dinner">6:00 PM – 11:00 PM</td>
-          </tr>
-          <tr>
-            <td data-i18n="dayMon">Monday</td>
-            <td data-i18n="lunch">12:00 PM – 3:00 PM</td>
-            <td data-i18n="dinner">6:00 PM – 11:00 PM</td>
-          </tr>
-          <tr>
-            <td data-i18n="dayTue">Tuesday</td>
-            <td colspan="2" data-i18n="closed">Closed</td>
-          </tr>
-          <tr>
-            <td data-i18n="dayWed">Wednesday</td>
-            <td data-i18n="lunch">12:00 PM – 3:00 PM</td>
-            <td data-i18n="dinner">6:00 PM – 11:00 PM</td>
-          </tr>
-          <tr>
-            <td data-i18n="dayThu">Thursday</td>
-            <td data-i18n="lunch">12:00 PM – 3:00 PM</td>
-            <td data-i18n="dinner">6:00 PM – 11:00 PM</td>
-          </tr>
-          <tr>
-            <td data-i18n="dayFri">Friday</td>
-            <td data-i18n="lunch">12:00 PM – 3:00 PM</td>
-            <td data-i18n="dinner">6:00 PM – 11:00 PM</td>
-          </tr>
-          <tr>
-            <td data-i18n="daySat">Saturday</td>
-            <td data-i18n="lunch">12:00 PM – 3:00 PM</td>
-            <td data-i18n="dinner">6:00 PM – 11:00 PM</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="hours-grid">
+        <!-- Sunday -->
+        <div class="day-row">
+          <div class="day-name" data-i18n="daySun">Sunday</div>
+          <div class="day-time">
+            <span data-i18n="lunchTime">12:00 PM – 3:00 PM</span>
+            <span class="time-sep">•</span>
+            <span data-i18n="dinnerTime">6:00 PM – 11:00 PM</span>
+          </div>
+        </div>
+        <!-- Monday -->
+        <div class="day-row">
+          <div class="day-name" data-i18n="dayMon">Monday</div>
+          <div class="day-time">
+            <span data-i18n="lunchTime">12:00 PM – 3:00 PM</span>
+            <span class="time-sep">•</span>
+            <span data-i18n="dinnerTime">6:00 PM – 11:00 PM</span>
+          </div>
+        </div>
+        <!-- Tuesday -->
+        <div class="day-row closed">
+          <div class="day-name" data-i18n="dayTue">Tuesday</div>
+          <div class="day-time status-closed" data-i18n="closed">Closed</div>
+        </div>
+        <!-- Wednesday -->
+        <div class="day-row">
+          <div class="day-name" data-i18n="dayWed">Wednesday</div>
+          <div class="day-time">
+            <span data-i18n="lunchTime">12:00 PM – 3:00 PM</span>
+            <span class="time-sep">•</span>
+            <span data-i18n="dinnerTime">6:00 PM – 11:00 PM</span>
+          </div>
+        </div>
+        <!-- Thursday -->
+        <div class="day-row">
+          <div class="day-name" data-i18n="dayThu">Thursday</div>
+          <div class="day-time">
+            <span data-i18n="lunchTime">12:00 PM – 3:00 PM</span>
+            <span class="time-sep">•</span>
+            <span data-i18n="dinnerTime">6:00 PM – 11:00 PM</span>
+          </div>
+        </div>
+        <!-- Friday -->
+        <div class="day-row">
+          <div class="day-name" data-i18n="dayFri">Friday</div>
+          <div class="day-time">
+            <span data-i18n="lunchTime">12:00 PM – 3:00 PM</span>
+            <span class="time-sep">•</span>
+            <span data-i18n="dinnerTime">6:00 PM – 11:00 PM</span>
+          </div>
+        </div>
+        <!-- Saturday -->
+        <div class="day-row">
+          <div class="day-name" data-i18n="daySat">Saturday</div>
+          <div class="day-time">
+            <span data-i18n="lunchTime">12:00 PM – 3:00 PM</span>
+            <span class="time-sep">•</span>
+            <span data-i18n="dinnerTime">6:00 PM – 11:00 PM</span>
+          </div>
+        </div>
+      </div>
 
-      <div class="actions" style="margin-top:20px; text-align:center; justify-content:center;">
+      <div class="actions" style="margin-top:40px; justify-content:center;">
         <a class="btn primary" data-whatsapp href="#" data-i18n="btnWhatsapp">Reserve on WhatsApp</a>
-        <a class="btn secondary" data-call href="#" data-i18n="btnCall">Call now</a>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
+      <div class="social-footer">
+        <a href="https://www.instagram.com/mozzarella.e.basilico" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g147292-d26626383-Reviews-Mozzarella_Basilico-La_Romana_La_Romana_Province_Dominican_Republic.html"
+          target="_blank" rel="noopener" aria-label="Tripadvisor">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+            <path d="M16 12h2"></path>
+            <path d="M6 12h2"></path>
+          </svg>
+        </a>
+      </div>
       <div data-i18n="footerLine">© Mozzarella & Basilico — La Romana, Dominican Republic</div>
     </div>
   </footer>
