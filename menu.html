@@ -34,68 +34,74 @@
   </header>
 
   <main class="container">
-    <section class="card">
-      <h2 data-i18n="menuTitle">Menu</h2>
-      <p class="small" data-i18n="menuDesc">
-        Authentic Italian cuisine. (Prices in DOP)
-      </p>
+    <section class="menu-section">
+      <div style="text-align:center; margin-bottom:40px;">
+        <h2 data-i18n="menuTitle" style="font-size:3rem; margin-bottom:10px;">Our Menu</h2>
+        <p class="small" data-i18n="menuDesc" style="font-style:italic;">A culinary journey through Italy.</p>
+        <div style="width: 60px; height: 3px; background: var(--accent); margin: 20px auto;"></div>
+      </div>
 
-      <div class="menu-grid" style="margin-top: 25px;">
+      <div class="menu-grid" style="display:block;"> <!-- Override grid to single column flow -->
 
-        <div class="menu-category">
+        <div class="menu-category" style="text-align:center;">
           <h3 data-i18n="secAntipasti">Antipasti</h3>
-          <div class="menu-item"><span class="menu-item-name">Caprese</span> <span class="menu-item-price">450</span>
-          </div>
-          <div class="menu-item"><span class="menu-item-name">Bruschetta</span> <span class="menu-item-price">350</span>
-          </div>
+
+          <div class="menu-item"><span class="menu-item-name">Caprese</span> <span class="menu-item-dots"></span> <span
+              class="menu-item-price">450</span></div>
+          <div class="menu-item"><span class="menu-item-name">Bruschetta</span> <span class="menu-item-dots"></span>
+            <span class="menu-item-price">350</span></div>
           <div class="menu-item"><span class="menu-item-name">Carpaccio di Manzo</span> <span
-              class="menu-item-price">650</span></div>
+              class="menu-item-dots"></span> <span class="menu-item-price">650</span></div>
         </div>
 
-        <div class="menu-category">
+        <div class="menu-category" style="text-align:center;">
           <h3 data-i18n="secPasta">Pasta</h3>
+
           <div class="menu-item"><span class="menu-item-name">Spaghetti Carbonara</span> <span
-              class="menu-item-price">650</span></div>
+              class="menu-item-dots"></span> <span class="menu-item-price">650</span></div>
           <div class="menu-item"><span class="menu-item-name">Penne Arrabbiata</span> <span
-              class="menu-item-price">550</span></div>
+              class="menu-item-dots"></span> <span class="menu-item-price">550</span></div>
           <div class="menu-item"><span class="menu-item-name">Lasagna alla Bolognese</span> <span
-              class="menu-item-price">700</span></div>
+              class="menu-item-dots"></span> <span class="menu-item-price">700</span></div>
           <div class="menu-item"><span class="menu-item-name">Fettuccine Alfredo</span> <span
-              class="menu-item-price">600</span></div>
+              class="menu-item-dots"></span> <span class="menu-item-price">600</span></div>
         </div>
 
-        <div class="menu-category">
+        <div class="menu-category" style="text-align:center;">
           <h3 data-i18n="secPizza">Pizza</h3>
-          <div class="menu-item"><span class="menu-item-name">Margherita</span> <span class="menu-item-price">550</span>
-          </div>
+
+          <div class="menu-item"><span class="menu-item-name">Margherita</span> <span class="menu-item-dots"></span>
+            <span class="menu-item-price">550</span></div>
           <div class="menu-item"><span class="menu-item-name">Prosciutto e Funghi</span> <span
-              class="menu-item-price">650</span></div>
+              class="menu-item-dots"></span> <span class="menu-item-price">650</span></div>
           <div class="menu-item"><span class="menu-item-name">Quattro Formaggi</span> <span
-              class="menu-item-price">700</span></div>
-          <div class="menu-item"><span class="menu-item-name">Diavola</span> <span class="menu-item-price">650</span>
-          </div>
+              class="menu-item-dots"></span> <span class="menu-item-price">700</span></div>
+          <div class="menu-item"><span class="menu-item-name">Diavola</span> <span class="menu-item-dots"></span> <span
+              class="menu-item-price">650</span></div>
         </div>
 
-        <div class="menu-category">
+        <div class="menu-category" style="text-align:center;">
           <h3 data-i18n="secDesserts">Dolci</h3>
-          <div class="menu-item"><span class="menu-item-name">Tiramisù</span> <span class="menu-item-price">350</span>
-          </div>
-          <div class="menu-item"><span class="menu-item-name">Panna Cotta</span> <span
-              class="menu-item-price">300</span></div>
-          <div class="menu-item"><span class="menu-item-name">Cannoli Siciliani</span> <span
+
+          <div class="menu-item"><span class="menu-item-name">Tiramisù</span> <span class="menu-item-dots"></span> <span
               class="menu-item-price">350</span></div>
+          <div class="menu-item"><span class="menu-item-name">Panna Cotta</span> <span class="menu-item-dots"></span>
+            <span class="menu-item-price">300</span></div>
+          <div class="menu-item"><span class="menu-item-name">Cannoli Siciliani</span> <span
+              class="menu-item-dots"></span> <span class="menu-item-price">350</span></div>
         </div>
 
-        <div class="menu-category">
+        <div class="menu-category" style="text-align:center;">
           <h3 data-i18n="secDrinks">Bevande</h3>
-          <div class="menu-item"><span class="menu-item-name">Espresso</span> <span class="menu-item-price">100</span>
-          </div>
-          <div class="menu-item"><span class="menu-item-name">Cappuccino</span> <span class="menu-item-price">150</span>
-          </div>
-          <div class="menu-item"><span class="menu-item-name">Acqua Panna</span> <span
-              class="menu-item-price">200</span></div>
-          <div class="menu-item"><span class="menu-item-name">San Pellegrino</span> <span
-              class="menu-item-price">250</span></div>
+
+          <div class="menu-item"><span class="menu-item-name">Espresso</span> <span class="menu-item-dots"></span> <span
+              class="menu-item-price">100</span></div>
+          <div class="menu-item"><span class="menu-item-name">Cappuccino</span> <span class="menu-item-dots"></span>
+            <span class="menu-item-price">150</span></div>
+          <div class="menu-item"><span class="menu-item-name">Acqua Panna</span> <span class="menu-item-dots"></span>
+            <span class="menu-item-price">200</span></div>
+          <div class="menu-item"><span class="menu-item-name">San Pellegrino</span> <span class="menu-item-dots"></span>
+            <span class="menu-item-price">250</span></div>
         </div>
 
       </div>
