@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery — Mozzarella & Basilico</title>
+    <meta name="description" content="Gallery — Mozzarella & Basilico." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container topbar">
+            <div class="brand">
+                <strong>Mozzarella & Basilico</strong>
+                <span data-i18n="brandTag">Italian Restaurant • La Romana</span>
+            </div>
+
+            <nav>
+                <a class="navlink" href="index.html" data-i18n="navHome">Home</a>
+                <a class="navlink" href="menu.html" data-i18n="navMenu">Menu</a>
+                <a class="navlink active" href="gallery.html" data-i18n="navGallery">Gallery</a>
+                <a class="navlink" href="location.html" data-i18n="navLocation">Location</a>
+                <a class="navlink" href="hours.html" data-i18n="navHours">Hours</a>
+            </nav>
+
+            <div class="lang" aria-label="Language switcher">
+                <button type="button" data-lang-btn="en">EN</button>
+                <button type="button" data-lang-btn="es">ES</button>
+                <button type="button" data-lang-btn="it">IT</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 data-i18n="galleryTitle">Gallery</h2>
+            <p class="small" data-i18n="galleryDesc" style="text-align:center; margin-bottom: 20px;">
+                A glimpse into our atmosphere and culinary creations.
+            </p>
+
+            <div class="gallery-grid">
+                <!-- Placeholders using solid colors or patterns/text if images aren't real yet -->
+                <!-- In a real scenario, use actual <img> src. Here we use placeholders. -->
+
+                <div class="gallery-item">
+                    <div
+                        style="background:#b09b46; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:2rem;">
+                        1</div>
+                    <div class="gallery-overlay">Atmosphere</div>
+                </div>
+                <div class="gallery-item">
+                    <div
+                        style="background:#857b6b; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:2rem;">
+                        2</div>
+                    <div class="gallery-overlay">Pizza Napoletana</div>
+                </div>
+                <div class="gallery-item">
+                    <div
+                        style="background:#3e3423; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:2rem;">
+                        3</div>
+                    <div class="gallery-overlay">Fresh Pasta</div>
+                </div>
+                <div class="gallery-item">
+                    <div
+                        style="background:#5a4a1b; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:2rem;">
+                        4</div>
+                    <div class="gallery-overlay">Fine Wines</div>
+                </div>
+                <div class="gallery-item">
+                    <div
+                        style="background:#b09b46; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:2rem;">
+                        5</div>
+                    <div class="gallery-overlay">Desserts</div>
+                </div>
+                <div class="gallery-item">
+                    <div
+                        style="background:#fcfaf2; border: 2px solid #b09b46; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#b09b46; font-weight:bold; font-size:2rem;">
+                        6</div>
+                    <div class="gallery-overlay">Our Team</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-footer">
+                <a href="https://www.instagram.com/mozzarella.e.basilico" target="_blank" rel="noopener"
+                    aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g147292-d26626383-Reviews-Mozzarella_Basilico-La_Romana_La_Romana_Province_Dominican_Republic.html"
+                    target="_blank" rel="noopener" aria-label="Tripadvisor">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"></path>
+                        <path d="M16 12h2"></path>
+                        <path d="M6 12h2"></path>
+                    </svg>
+                </a>
+            </div>
+            <div data-i18n="footerLine">© Mozzarella & Basilico — La Romana, Dominican Republic</div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

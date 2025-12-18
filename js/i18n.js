@@ -5,6 +5,7 @@ window.I18N = {
     navMenu: "Menu",
     navLocation: "Location",
     navHours: "Hours",
+    navGallery: "Gallery",
     brandTag: "Italian Restaurant • La Romana",
 
     // Hero
@@ -12,6 +13,10 @@ window.I18N = {
     heroDesc: "Authentic Italian flavors in the heart of La Romana. Experience fine dining with traditional Neapolitan recipes.",
     btnWhatsapp: "Reserve on WhatsApp",
     btnCall: "Call Now",
+
+    // Story
+    storyTitle: "Our Story",
+    storyDesc: "Born from a passion for authentic Italian cuisine, Mozzarella & Basilico brings the soul of Naples to the Caribbean. Our chefs use only the freshest imported ingredients to craft dishes that tell a story of tradition, family, and love. Whether you are here for a romantic dinner or a family gathering, we promise an unforgettable culinary experience.",
 
     // Features Section
     featTitle: "Our Amenities",
@@ -27,7 +32,7 @@ window.I18N = {
     // Location
     locationTitle: "Find Us",
     locationDesc: "Calle Los Robles 9, Buena Vista Norte, Plaza Buena Vista, La Romana 22000, Dominican Republic.",
-    
+
     // Reservations Card
     reserveTitle: "Reservations",
     reserveDesc: "Tap to reserve instantly. No forms — just WhatsApp or Phone.",
@@ -54,10 +59,14 @@ window.I18N = {
     dayThu: "Thursday",
     dayFri: "Friday",
     daySat: "Saturday",
-    
+
     lunchTime: "12:00 PM – 3:00 PM",
     dinnerTime: "6:00 PM – 11:00 PM",
     closed: "Closed",
+
+    // Gallery
+    galleryTitle: "Gallery",
+    galleryDesc: "A glimpse into our atmosphere and culinary creations.",
 
     // Footer
     footerLine: "© Mozzarella & Basilico — La Romana, Dominican Republic"
@@ -68,12 +77,16 @@ window.I18N = {
     navMenu: "Menú",
     navLocation: "Ubicación",
     navHours: "Horarios",
+    navGallery: "Galería",
     brandTag: "Restaurante Italiano • La Romana",
 
     heroTitle: "Mozzarella & Basilico",
     heroDesc: "Auténticos sabores italianos en el corazón de La Romana. Disfrute de la alta cocina con recetas tradicionales napolitanas.",
     btnWhatsapp: "Reservar por WhatsApp",
     btnCall: "Llamar Ahora",
+
+    storyTitle: "Nuestra Historia",
+    storyDesc: "Nacido de la pasión por la auténtica cocina italiana, Mozzarella & Basilico trae el alma de Nápoles al Caribe. Nuestros chefs utilizan solo los ingredientes importados más frescos para elaborar platos que cuentan una historia de tradición, familia y amor. Ya sea que esté aquí para una cena romántica o una reunión familiar, prometemos una experiencia culinaria inolvidable.",
 
     featTitle: "Nuestras Amenidades",
     featCuisines: "Italiana, Pizza, Mediterránea, Napolitana, Siciliana",
@@ -116,6 +129,9 @@ window.I18N = {
     dinnerTime: "6:00 PM – 11:00 PM",
     closed: "Cerrado",
 
+    galleryTitle: "Galería",
+    galleryDesc: "Un vistazo a nuestra atmósfera y creaciones culinarias.",
+
     footerLine: "© Mozzarella & Basilico — La Romana, República Dominicana"
   },
 
@@ -124,12 +140,16 @@ window.I18N = {
     navMenu: "Menù",
     navLocation: "Posizione",
     navHours: "Orari",
+    navGallery: "Galleria",
     brandTag: "Ristorante Italiano • La Romana",
 
     heroTitle: "Mozzarella & Basilico",
     heroDesc: "Autentici sapori italiani nel cuore di La Romana. Cucina raffinata con ricette tradizionali napoletane.",
     btnWhatsapp: "Prenota con WhatsApp",
     btnCall: "Chiama Ora",
+
+    storyTitle: "La Nostra Storia",
+    storyDesc: "Nato dalla passione per l'autentica cucina italiana, Mozzarella & Basilico porta l'anima di Napoli ai Caraibi. I nostri chef utilizzano solo ingredienti importati freschissimi per creare piatti che raccontano una storia di tradizione, famiglia e amore. Che tu sia qui per una cena romantica o una riunione di famiglia, promettiamo un'esperienza culinaria indimenticabile.",
 
     featTitle: "I Nostri Servizi",
     featCuisines: "Italiana, Pizza, Mediterranea, Napoletana, Siciliana",
@@ -171,6 +191,9 @@ window.I18N = {
     lunchTime: "12:00 PM – 3:00 PM",
     dinnerTime: "6:00 PM – 11:00 PM",
     closed: "Chiuso",
+
+    galleryTitle: "Galleria",
+    galleryDesc: "Uno sguardo alla nostra atmosfera e alle creazioni culinarie.",
 
     footerLine: "© Mozzarella & Basilico — La Romana, Repubblica Dominicana"
   }
