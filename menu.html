@@ -1,38 +1,114 @@
-<section class="card">
-  <h2 data-i18n="menuTitle">Menu</h2>
-  <p class="small" data-i18n="menuDesc">
-    Text menu (edit items/prices anytime).
-  </p>
+<!doctype html>
+<html lang="en">
 
-  <ul class="list">
-    <li>
-      <strong data-i18n="secAntipasti">Antipasti</strong><br>
-      <span class="small">Caprese — RD$ ___</span><br>
-      <span class="small">Bruschetta — RD$ ___</span>
-    </li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu — Mozzarella & Basilico</title>
+  <meta name="description" content="Our Menu — Mozzarella & Basilico." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-    <li>
-      <strong data-i18n="secPasta">Pasta</strong><br>
-      <span class="small">Spaghetti Carbonara — RD$ ___</span><br>
-      <span class="small">Penne Arrabbiata — RD$ ___</span>
-    </li>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <strong>Mozzarella & Basilico</strong>
+        <span data-i18n="brandTag">Italian Restaurant • La Romana</span>
+      </div>
 
-    <li>
-      <strong data-i18n="secPizza">Pizza</strong><br>
-      <span class="small">Margherita — RD$ ___</span><br>
-      <span class="small">Prosciutto e Funghi — RD$ ___</span>
-    </li>
+      <nav>
+        <a class="navlink" href="index.html" data-i18n="navHome">Home</a>
+        <a class="navlink active" href="menu.html" data-i18n="navMenu">Menu</a>
+        <a class="navlink" href="location.html" data-i18n="navLocation">Location</a>
+        <a class="navlink" href="hours.html" data-i18n="navHours">Hours</a>
+      </nav>
 
-    <li>
-      <strong data-i18n="secDesserts">Dolci</strong><br>
-      <span class="small">Tiramisù — RD$ ___</span><br>
-      <span class="small">Panna Cotta — RD$ ___</span>
-    </li>
+      <div class="lang" aria-label="Language switcher">
+        <button type="button" data-lang-btn="en">EN</button>
+        <button type="button" data-lang-btn="es">ES</button>
+        <button type="button" data-lang-btn="it">IT</button>
+      </div>
+    </div>
+  </header>
 
-    <li>
-      <strong data-i18n="secDrinks">Bevande</strong><br>
-      <span class="small">Espresso — RD$ ___</span><br>
-      <span class="small">Acqua — RD$ ___</span>
-    </li>
-  </ul>
-</section>
+  <main class="container">
+    <section class="card">
+      <h2 data-i18n="menuTitle">Menu</h2>
+      <p class="small" data-i18n="menuDesc">
+        Authentic Italian cuisine. (Prices in DOP)
+      </p>
+
+      <div class="menu-grid" style="margin-top: 25px;">
+
+        <div class="menu-category">
+          <h3 data-i18n="secAntipasti">Antipasti</h3>
+          <div class="menu-item"><span class="menu-item-name">Caprese</span> <span class="menu-item-price">450</span>
+          </div>
+          <div class="menu-item"><span class="menu-item-name">Bruschetta</span> <span class="menu-item-price">350</span>
+          </div>
+          <div class="menu-item"><span class="menu-item-name">Carpaccio di Manzo</span> <span
+              class="menu-item-price">650</span></div>
+        </div>
+
+        <div class="menu-category">
+          <h3 data-i18n="secPasta">Pasta</h3>
+          <div class="menu-item"><span class="menu-item-name">Spaghetti Carbonara</span> <span
+              class="menu-item-price">650</span></div>
+          <div class="menu-item"><span class="menu-item-name">Penne Arrabbiata</span> <span
+              class="menu-item-price">550</span></div>
+          <div class="menu-item"><span class="menu-item-name">Lasagna alla Bolognese</span> <span
+              class="menu-item-price">700</span></div>
+          <div class="menu-item"><span class="menu-item-name">Fettuccine Alfredo</span> <span
+              class="menu-item-price">600</span></div>
+        </div>
+
+        <div class="menu-category">
+          <h3 data-i18n="secPizza">Pizza</h3>
+          <div class="menu-item"><span class="menu-item-name">Margherita</span> <span class="menu-item-price">550</span>
+          </div>
+          <div class="menu-item"><span class="menu-item-name">Prosciutto e Funghi</span> <span
+              class="menu-item-price">650</span></div>
+          <div class="menu-item"><span class="menu-item-name">Quattro Formaggi</span> <span
+              class="menu-item-price">700</span></div>
+          <div class="menu-item"><span class="menu-item-name">Diavola</span> <span class="menu-item-price">650</span>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h3 data-i18n="secDesserts">Dolci</h3>
+          <div class="menu-item"><span class="menu-item-name">Tiramisù</span> <span class="menu-item-price">350</span>
+          </div>
+          <div class="menu-item"><span class="menu-item-name">Panna Cotta</span> <span
+              class="menu-item-price">300</span></div>
+          <div class="menu-item"><span class="menu-item-name">Cannoli Siciliani</span> <span
+              class="menu-item-price">350</span></div>
+        </div>
+
+        <div class="menu-category">
+          <h3 data-i18n="secDrinks">Bevande</h3>
+          <div class="menu-item"><span class="menu-item-name">Espresso</span> <span class="menu-item-price">100</span>
+          </div>
+          <div class="menu-item"><span class="menu-item-name">Cappuccino</span> <span class="menu-item-price">150</span>
+          </div>
+          <div class="menu-item"><span class="menu-item-name">Acqua Panna</span> <span
+              class="menu-item-price">200</span></div>
+          <div class="menu-item"><span class="menu-item-name">San Pellegrino</span> <span
+              class="menu-item-price">250</span></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div data-i18n="footerLine">© Mozzarella & Basilico — La Romana, Dominican Republic</div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

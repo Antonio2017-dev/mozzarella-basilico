@@ -1,17 +1,65 @@
-<main class="container">
-  <section class="card">
-    <h2 data-i18n="locationTitle">Find us</h2>
-    <p class="small" data-i18n="locationDesc"></p>
-    <div class="actions">
-      <a class="btn primary" data-whatsapp href="#" data-i18n="btnWhatsapp">Reserve on WhatsApp</a>
-      <a class="btn secondary" data-call href="#" data-i18n="btnCall">Call now</a>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Location — Mozzarella & Basilico</title>
+  <meta name="description" content="Find Mozzarella & Basilico in La Romana." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <strong>Mozzarella & Basilico</strong>
+        <span data-i18n="brandTag">Italian Restaurant • La Romana</span>
+      </div>
+
+      <nav>
+        <a class="navlink" href="index.html" data-i18n="navHome">Home</a>
+        <a class="navlink" href="menu.html" data-i18n="navMenu">Menu</a>
+        <a class="navlink active" href="location.html" data-i18n="navLocation">Location</a>
+        <a class="navlink" href="hours.html" data-i18n="navHours">Hours</a>
+      </nav>
+
+      <div class="lang" aria-label="Language switcher">
+        <button type="button" data-lang-btn="en">EN</button>
+        <button type="button" data-lang-btn="es">ES</button>
+        <button type="button" data-lang-btn="it">IT</button>
+      </div>
     </div>
-    <hr class="sep" />
-    <iframe
-      class="map"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps?q=18.4278254,-68.9563827&z=16&output=embed"
-      title="Google Maps - Mozzarella & Basilico"></iframe>
-  </section>
-</main>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 data-i18n="locationTitle">Find us</h2>
+      <p class="small" data-i18n="locationDesc">
+        Calle Los Robles 9 Buena Vista Norte, Plaza Buena Vista, La Romana 22000, Dominican Republic.
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" data-whatsapp href="#" data-i18n="btnWhatsapp">Reserve on WhatsApp</a>
+        <a class="btn secondary" data-call href="#" data-i18n="btnCall">Call now</a>
+      </div>
+
+      <hr class="sep" />
+
+      <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=18.4278254,-68.9563827&z=16&output=embed"
+        title="Google Maps - Mozzarella & Basilico"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div data-i18n="footerLine">© Mozzarella & Basilico — La Romana, Dominican Republic</div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
