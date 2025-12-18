@@ -65,3 +65,48 @@
   updateLangButtons(lang);
   updateReserveLinks(lang);
 })();
+
+/* Phase 6: Mobile Toggle & Scroll Animations */
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Mobile Menu Toggle
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            toggleBtn.classList.toggle('open');
+            // Optional: Prevent scrolling body when menu is open? 
+            // document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Close menu when clicking a link
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                toggleBtn.classList.remove('open');
+            });
+        });
+    }
+
+    // 2. Scroll Animations
+    // Select all cards, heroes, and headers to animate
+    const revealElements = document.querySelectorAll('.card, .hero, .menu-section, .hours-card');
+    
+    // Add .reveal class initially
+    revealElements.forEach(el => el.classList.add('reveal'));
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Animate only once
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+});
+

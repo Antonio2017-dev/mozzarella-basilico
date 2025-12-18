@@ -752,3 +752,79 @@ footer {
   background: var(--accent);
   margin: 0 auto;
 }
+/* Phase 6: Mobile Menu & Animations */
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001; /* Above mobile nav */
+}
+.menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent2);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Nav Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: var(--bg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
+  
+  nav.active {
+    right: 0;
+  }
+  
+  nav .navlink {
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+
+  /* Hamburger Animation */
+  .menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+}
+
+/* Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
