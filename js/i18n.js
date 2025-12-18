@@ -43,11 +43,11 @@ window.I18N = {
     // Menu
     menuTitle: "Our Menu",
     menuDesc: "A culinary journey through Italy. (Prices in DOP)",
-    secAntipasti: "Antipasti",
+    secAntipasti: "Appetizers",
     secPasta: "Pasta",
     secPizza: "Pizza",
-    secDesserts: "Dolci",
-    secDrinks: "Bevande",
+    secDesserts: "Desserts",
+    secDrinks: "Drinks",
 
     // Hours
     hoursTitle: "Opening Hours",
