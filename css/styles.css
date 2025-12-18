@@ -201,11 +201,13 @@ main {
   margin: 0 auto;
 }
 
+/* Actions centering is handled by flexbox usually, but let's make sure */
 .actions {
   margin-top: 10px;
   display: flex;
   gap: 16px;
   justify-content: center;
+  /* Default center */
 }
 
 .btn {
@@ -268,6 +270,8 @@ main {
   box-shadow: var(--shadow);
   padding: 30px;
   height: 100%;
+  text-align: center;
+  /* Force centering for headers */
 }
 
 .card h2 {
