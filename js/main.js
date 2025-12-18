@@ -110,3 +110,19 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => revealObserver.observe(el));
 });
 
+
+/* Fix Menu Toggle Logic for Right Side X */
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    
+    // Create a clone of the toggle button to serve as the Close button inside the nav
+    // OR just style the existing toggle button to stay Fixed on top right?
+    // Let's try making the toggle button fixed z-index higher than nav.
+    
+    if(toggleBtn) {
+        toggleBtn.style.zIndex = '2000'; // Ensure it's above the nav overlay
+        toggleBtn.style.position = 'relative'; 
+    }
+});
+
